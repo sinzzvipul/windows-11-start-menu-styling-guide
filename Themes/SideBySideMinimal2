@@ -1,0 +1,89 @@
+# SideBySideMinimal2 theme for Windows 11 Start Menu Styler
+
+**Author**: [sinzzvipul](https://github.com/sinzzvipul)
+
+![Screenshot](screenshot.png)
+
+## Theme selection
+
+The theme is integrated into the mod, and can be simply selected from the mod's
+settings:
+
+* Open the Windows 11 Start Menu Styler mod in Windhawk.
+* Go to the "Settings" tab.
+* Select the theme and save the settings.
+
+## Manual installation
+
+The theme styles can also be imported manually. To do that, follow these steps:
+
+* Open the Windows 11 Start Menu Styler mod in Windhawk.
+* Go to the "Advanced" tab.
+* Copy the content below to the text box under "Mod settings" and click "Save".
+
+<details>
+<summary>Content to import (click to expand)</summary>
+
+```json
+{
+  "controlStyles[0].target": "StartDocked.StartSizingFrame",
+  "controlStyles[0].styles[0]": "MaxHeight=500",
+  "controlStyles[1].target": "Windows.UI.Xaml.Controls.Grid#TopLevelSuggestionsListHeader",
+  "controlStyles[1].styles[0]": "Visibility=Collapsed",
+  "controlStyles[2].target": "StartMenu.PinnedList",
+  "controlStyles[2].styles[0]": "Height=400",
+  "controlStyles[3].target": "Windows.UI.Xaml.Controls.Border#DropShadow",
+  "controlStyles[3].styles[0]": "CornerRadius=30",
+  "controlStyles[4].target": "Windows.UI.Xaml.Controls.Border#StartDropShadow",
+  "controlStyles[4].styles[0]": "CornerRadius=30",
+  "controlStyles[5].target": "StartDocked.LauncherFrame > Grid#RootGrid > Grid#RootContent > Grid#MainContent > Grid#InnerContent > Rectangle",
+  "controlStyles[5].styles[0]": "Visibility=Collapsed",
+  "controlStyles[6].target": "StartDocked.SearchBoxToggleButton",
+  "controlStyles[6].styles[0]": "Height=0",
+  "controlStyles[6].styles[1]": "Width=0",
+  "controlStyles[7].target": "Border#AcrylicBorder",
+  "controlStyles[7].styles[0]": "CornerRadius=30",
+  "controlStyles[7].styles[1]": "Background:=<AcrylicBrush TintColor=\"{ThemeResource CardStrokeColorDefaultSolid}\" FallbackColor=\"{ThemeResource CardStrokeColorDefaultSolid}\" TintOpacity=\"0\" TintLuminosityOpacity=\".5\" Opacity=\"1\"/>",
+  "controlStyles[8].target": "Border#AcrylicOverlay",
+  "controlStyles[8].styles[0]": "CornerRadius=30",
+  "controlStyles[8].styles[1]": "Margin=0,0,0,20",
+  "controlStyles[8].styles[2]": "Background:=<AcrylicBrush TintColor=\"{ThemeResource CardStrokeColorDefaultSolid}\" FallbackColor=\"{ThemeResource CardStrokeColorDefaultSolid}\" TintOpacity=\"0\" TintLuminosityOpacity=\"1\" Opacity=\"1\"/>",
+  "controlStyles[9].target": "Windows.UI.Xaml.Controls.Grid#AllAppsRoot",
+  "controlStyles[9].styles[0]": "Visibility=Visible",
+  "controlStyles[9].styles[1]": "Width=350",
+  "controlStyles[9].styles[2]": "Margin=-1200,-50,850,0",
+  "controlStyles[10].target": "Windows.UI.Xaml.Controls.Grid#UndockedRoot",
+  "controlStyles[10].styles[0]": "Visibility=Visible",
+  "controlStyles[10].styles[1]": "Width=350",
+  "controlStyles[10].styles[2]": "Margin=150,-50,-150,0",
+  "controlStyles[11].target": "StartDocked.NavigationPaneView#NavigationPane > Windows.UI.Xaml.Controls.Grid#RootPanel",
+  "controlStyles[11].styles[0]": "Margin=0,-10,0,10",
+  "controlStyles[12].target": "StartDocked.AppListView#NavigationPanePlacesListView > Windows.UI.Xaml.Controls.Border",
+  "controlStyles[12].styles[0]": "Background:=<AcrylicBrush TintColor=\"{ThemeResource CardStrokeColorDefaultSolid}\" FallbackColor=\"{ThemeResource CardStrokeColorDefaultSolid}\" TintOpacity=\"0\" TintLuminosityOpacity=\".5\" Opacity=\"1\"/>",
+  "controlStyles[12].styles[1]": "CornerRadius=18",
+  "controlStyles[12].styles[2]": "Margin=0,0,15,0",
+  "controlStyles[13].target": "StartDocked.NavigationPaneButton#PowerButton > Windows.UI.Xaml.Controls.Grid@CommonStates > Windows.UI.Xaml.Controls.Border#BackgroundBorder",
+  "controlStyles[13].styles[0]": "Background:=<AcrylicBrush TintColor=\"{ThemeResource CardStrokeColorDefaultSolid}\" FallbackColor=\"{ThemeResource CardStrokeColorDefaultSolid}\" TintOpacity=\"0\" TintLuminosityOpacity=\"1\" Opacity=\"1\"/>",
+  "controlStyles[13].styles[1]": "BorderBrush@Normal:=<AcrylicBrush TintColor=\"{ThemeResource SurfaceStrokeColorDefault}\" FallbackColor=\"{ThemeResource SurfaceStrokeColorDefault}\" TintOpacity=\"0\" TintLuminosityOpacity=\".1\" Opacity=\"1\"/>",
+  "controlStyles[13].styles[2]": "CornerRadius=30",
+  "controlStyles[13].styles[3]": "BorderThickness=5",
+  "controlStyles[13].styles[4]": "Margin=-7",
+  "controlStyles[13].styles[5]": "BorderBrush@PointerOver:=<AcrylicBrush TintColor=\"{ThemeResource SystemAccentColor}\" FallbackColor=\"{ThemeResource SystemAccentColor}\" TintOpacity=\".8\" TintLuminosityOpacity=\".5\" Opacity=\"1\"/>",
+  "controlStyles[14].target": "StartDocked.NavigationPaneButton#UserTileButton > Grid > Border#BackgroundBorder",
+  "controlStyles[14].styles[0]": "Background:=<AcrylicBrush TintColor=\"{ThemeResource CardStrokeColorDefaultSolid}\" FallbackColor=\"{ThemeResource CardStrokeColorDefaultSolid}\" TintOpacity=\"0\" TintLuminosityOpacity=\".5\" Opacity=\"1\"/>",
+  "controlStyles[14].styles[1]": "CornerRadius=18",
+  "controlStyles[15].target": "Windows.UI.Xaml.Controls.Button#ShowAllAppsButton",
+  "controlStyles[15].styles[0]": "Visibility=Collapsed",
+  "controlStyles[16].target": "Windows.UI.Xaml.Controls.Button#ShowMoreSuggestionsButton",
+  "controlStyles[16].styles[0]": "Visibility=Collapsed",
+  "controlStyles[17].target": "Windows.UI.Xaml.Controls.Button#CloseAllAppsButton",
+  "controlStyles[17].styles[0]": "Visibility=Collapsed",
+  "controlStyles[18].target": "Grid#TopLevelSuggestionsContainer",
+  "controlStyles[18].styles[0]": "Visibility=Collapsed",
+  "controlStyles[19].target": "Windows.UI.Xaml.Controls.Grid#TopLevelSuggestionsListHeader",
+  "controlStyles[19].styles[0]": "Visibility=Collapsed",
+  "controlStyles[20].target": "Windows.UI.Xaml.Controls.Grid#SuggestionsParentContainer",
+  "controlStyles[20].styles[0]": "Visibility=Collapsed"
+}
+```
+</details>
